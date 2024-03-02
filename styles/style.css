@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.container {
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    background-image: url("../images/bg.png");
+    width: 100%;
+    min-height: 725px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-title {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+    font-size: 79px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 96px;
+    text-align: center;
+}
+
+.header-subtitle {
+    text-transform: uppercase;
+    color: white;
+    font: 300 27px/33px 'Montserrat', sans-serif;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.header-button {
+    display: block;
+    padding: 26px 22px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    font: 700 15px/18px 'Montserrat', sans-serif;
+    user-select: none;
+    text-decoration: none;
+    color: black;
+}
+
+/* MAIN CONTENT */
+
+.main {
+    padding: 72px 0 181px;
+}
+
+.main-title {
+    font: 600 37px/45px 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 51px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    gap: 96px;
+}
+
+.inner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font: 400 25px/30px 'Montserrat', sans-serif;
+    max-width: 973px;
+}
+
+.inner-content img {
+    width: 100%;
+    height: 100%;
+}
+
+.inner-content p:not(:last-child) {
+    padding-bottom: 40px;
+}
+
+
+/* FOOTER */
+
+
+.footer {
+    background-color: #1E2E3D;
+    padding: 120px 0;
+    text-align: center;
+}
+
+.footer-logo {
+    padding-bottom: 25px;
+}
+
+.footer-title, .footer-subtitle {
+    color: white;
+}
+
+.footer-title {
+    font: 600 35px/43px 'Montserrat', sans-serif;
+}
+
+.footer-subtitle {
+    font: 600 20px/24px 'Montserrat', sans-serif;
+}
+
+.social-media {
+    display: inline-flex;
+    padding-top: 27px;
+}
+
+
+
+/* MOBILE - MEDIA SCREEN - ADAPTIVE*/
+
+@media screen and (max-width: 975px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .header-title {
+        line-height: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    .header-title {
+        font-size: 45px;
+        line-height: 1.2;
+    }
+
+    .header-subtitle {
+        font-size: 17px;
+    }
+
+    .footer-title {
+        font-size: 25px;
+    }
+
+    .footer-subtitle {
+        font-size: 12px;
+    }
+}
